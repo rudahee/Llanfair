@@ -122,7 +122,7 @@ public class RecordDialog extends LlanfairDialog
         ArrayList<Game> games = new ArrayList<>();
 
         try {
-            games = WorldRecordParser.searchGames(name);
+            games = WorldRecordParser.searchGames(name.replaceAll(" ", "%20"));
         } catch (IOException e)
         {
             master.showError("Error searching for matching games from speedrun.com.", e);

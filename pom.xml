@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.fenix.llanfair.Llanfair</groupId>
   <artifactId>org.fenix.llanfair.Llanfair</artifactId>
-  <version>1.5.4.1</version>
+  <version>1.5.5</version>
   <packaging>jar</packaging>
   <name>Llanfair</name>
   

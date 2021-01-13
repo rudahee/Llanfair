@@ -797,9 +797,6 @@ public class Run implements TableModel, Serializable {
 		}
 		pcSupport.firePropertyChange(
 				CURRENT_SEGMENT_PROPERTY, current - 1, current);
-		if (segmented && state == State.ONGOING && current > -1) {
-			pause();
-		}
 	}
 
 	/**
