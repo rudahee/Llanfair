@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package org.fenix.utils.about;
+package org.fenix.utils.gui;
 
 import java.awt.Color;
 import java.awt.Cursor;

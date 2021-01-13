@@ -6,6 +6,7 @@
 package org.fenix.utils.about;
 
 import org.fenix.utils.gui.GBC;
+import org.fenix.utils.gui.HyperLabel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,11 +14,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.URL;
 
+@SuppressWarnings("serial")
 public class AboutDialog extends JDialog implements ActionListener {
 	private JLabel icon = new JLabel();
 	private JLabel message;
-	private org.fenix.utils.about.HyperLabel website;
-	private org.fenix.utils.about.HyperLabel donate;
+	private HyperLabel website;
+	private HyperLabel donate;
 	private JButton okButton;
 
 	public AboutDialog(Window owner, String title) {
@@ -64,7 +66,7 @@ public class AboutDialog extends JDialog implements ActionListener {
 		if(url == null) {
 			throw new NullPointerException("Donate URL is null");
 		} else {
-			this.donate = new org.fenix.utils.about.HyperLabel(url, icon);
+			this.donate = new HyperLabel(url, icon);
 		}
 	}
 
@@ -80,7 +82,7 @@ public class AboutDialog extends JDialog implements ActionListener {
 				text = url.toString();
 			}
 
-			this.website = new org.fenix.utils.about.HyperLabel(url, text);
+			this.website = new HyperLabel(url, text);
 		}
 	}
 
