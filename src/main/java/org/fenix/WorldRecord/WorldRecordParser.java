@@ -85,7 +85,7 @@ public class WorldRecordParser
 
         String player_name = getPlayerName(wr_run.getJSONArray("players").getJSONObject(0));
 
-        return "World record: " + parseTime(wr_run.getJSONObject("times").getFloat("primary_t")) + " by " + player_name;
+        return "World record: " + parseTime((wr_run.getJSONObject("times")).getInt("primary_t")) + " by " + player_name;
     }
 
     /**
